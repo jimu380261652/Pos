@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="sample">hello</string>
+    <string name="app_name">李子订餐</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_description"></string>
+    <string name="app_null_exception_tip">服务器数据返回出错.可能出现了空数据.</string>
+  	<string name="app_reload">重新加载</string>
+	<string name="app_loading_tip">数据加载中...</string>
+  	<string name="app_username_is_not_empty_tip">用户名不能为空.</string>
+  	<string name="app_password_is_not_empty_tip">密码不能为空.</string>
+  	<string-array name="zhifu">
+	    <item >微信扫码支付</item>
+	    <item >刷卡支付</item>
+	   <!--  <item >支付宝扫码</item> -->
+	</string-array>
+	<string-array name="guadang">
+	    <item >移除</item>
+	    <item >取消</item>
+	</string-array>
+	<string-array name="change">
+	    <item >确定</item>
+	    <item >取消</item>
+	</string-array>
+</resources>

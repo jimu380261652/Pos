@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phone_recharge_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF" >
+
+    <ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/public_top_btm"/>
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:src="@drawable/public_top_btm"/>
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="93dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logo"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/title_bar_tv"
+            android:text="终端激活"
+            android:textColor="@android:color/black"
+            android:textSize="35dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="280dp"
+            android:src="@drawable/game_phont_icon" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服电话：400-618-2627"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="350dp"
+        android:layout_below="@+id/layout_title_bar" >
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="机    具    ID:"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/machines_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="center|left"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/LinearLayout1"  >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="商    户    ID:"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            
+             <EditText
+                android:id="@+id/merchant_id"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_edit_bg_press"
+                android:paddingLeft="10dp"
+                android:textColor="#E85100"
+                android:textSize="25sp" />
+            
+        </LinearLayout>
+	
+         <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/LinearLayout2"  >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="安 装 员 I D:"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            
+             <EditText
+                android:id="@+id/install_id"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_edit_bg_press"
+                android:paddingLeft="10dp"
+                android:textColor="#E85100"
+                android:textSize="25sp" />
+            
+        </LinearLayout>
+
+         <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/LinearLayout3"  >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="安装员密码:"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            
+             <EditText
+                android:id="@+id/install_pw"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:background="@drawable/input_edit_bg_press"
+                android:paddingLeft="10dp"
+                android:textColor="#E85100"
+                android:textSize="25sp" />
+            
+        </LinearLayout>
+        
+		<LinearLayout
+            android:id="@+id/LinearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+             android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/activate_btn"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_btn_bg"
+                android:gravity="center"
+                android:text="激活"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/layout_title_bar"
+        android:layout_centerVertical="true"
+        android:background="#FDFfff" >
+
+        <com.duiduifu.view.KeyBoardView
+            android:id="@+id/keyBoardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.duiduifu.view.KeyBoardView>
+    </RelativeLayout>
+    
+    <include layout="@layout/layout_progress_dialog" />
+
+</RelativeLayout>

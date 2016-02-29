@@ -1,0 +1,127 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="business_item_title_text">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="radio_dialog_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/radio_selctor</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="order_detail_text">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="select_item_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="button_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="layout_stock">
+        <item name="android:background">@drawable/bg_edit</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="stock_text">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="stock_edittext">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="radio_button_text">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/radio_text_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="radio_button_text2">
+        <item name="android:background">@drawable/radiobutton_selector</item>
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/rotate_loading_github</item>
+        <item name="android:layout_width">21dp</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_gravity">center_horizontal|bottom</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Dialog_No_Border">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="CustomLeftRadioBtn">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/search_radio_1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="CustomRightRadioBtn">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/search_radio_1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

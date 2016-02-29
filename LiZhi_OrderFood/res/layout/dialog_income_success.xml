@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/btn_white">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值成功！"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20sp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已成功充值100.00元至备付金账户564654"
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="@color/light_gray"
+		android:layout_marginTop="120dp"/>
+    <Button 
+        android:id="@+id/bt_dlg_incomesuccess"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/skyblue"
+        android:background="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="top_title_height">110dp</dimen>
+    <dimen name="edittext_height">80dp</dimen>
+    <dimen name="home_tab_width">100dp</dimen>
+    <dimen name="radio_text_width">120dp</dimen>
+    <dimen name="double_radio_text_width">240dp</dimen>
+    <dimen name="three_radio_text_width">360dp</dimen>
+    <dimen name="five_radio_text_width">600dp</dimen>
+    <dimen name="four_radio_text_width">480dp</dimen>
+    <dimen name="left_item_width">310dp</dimen><!-- radio_text_width*2+title_left_margin*2+10dp -->
+	<dimen name="list_item_height">46dp</dimen>
+	<dimen name="title_left_margin">30dp</dimen>
+	<dimen name="button_width">150dp</dimen>
+	<dimen name="button_height">70dp</dimen>
+	<dimen name="round_radius">4dp</dimen>
+	<dimen name="six_radio_text_width">420dp</dimen>
+    <dimen name="title">30sp</dimen>
+    <dimen name="normal_text">18sp</dimen>
+    <dimen name="small_text">16sp</dimen>
+    <dimen name="smaller_text">14sp</dimen>
+    <dimen name="big_text">20sp</dimen>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:background="#FFFFFF" >
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+        
+         <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="20dp"
+	        android:orientation="vertical">
+	        
+               <LinearLayout 
+		          android:id="@+id/setting_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		          <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="系统设置"/>
+		          
+		      </LinearLayout>
+		      
+		     <LinearLayout 
+		          android:id="@+id/vpn_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		         android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		          <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="VPN设置"/>
+		         
+		          
+		      </LinearLayout>
+		    
+		     <LinearLayout 
+		          android:id="@+id/g_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		         android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		           <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:id="@+id/g_text"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="3G设置"/>
+		        
+		          
+		      </LinearLayout>
+		      
+		     <LinearLayout 
+		          android:id="@+id/wifi_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		         <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="WIFI设置"/>
+		          
+		          
+		      </LinearLayout>
+		      
+		     <LinearLayout 
+		          android:id="@+id/date_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		         <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="日期设置"/>
+		          
+		          
+		      </LinearLayout>
+		      
+		     <LinearLayout 
+		          android:id="@+id/image_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		         <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="重置图片资源"/>
+		          
+		          
+		      </LinearLayout>
+		      
+		     <LinearLayout 
+		          android:id="@+id/mtms_layer"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		         android:layout_marginLeft="110dp"
+		          android:layout_marginTop="30dp"
+		          android:orientation="horizontal">
+		          
+		         <ImageView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="5dp"
+		              android:src="@drawable/bg_setting"
+		              android:layout_gravity="center_vertical"
+		              />
+		          
+		          <TextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginLeft="10dp"
+		              android:textSize="20sp"
+		              android:layout_gravity="center_vertical"
+		              android:text="打开MTMS"/>
+		          
+		          
+		      </LinearLayout>
+	     
+	     </LinearLayout>
+        
+    </ScrollView>
+    
+    
+    
+
+</RelativeLayout>

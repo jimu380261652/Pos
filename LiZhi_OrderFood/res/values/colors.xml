@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hide_transparent">#80000000</color>
+    <color name="black">#333333</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#eeeeee</color>
+    <color name="darkgray">#a9a9a9</color>
+    <!-- 暗灰色 -->
+    <color name="green">#44D53D</color>
+    <color name="darkgreen">#44AD3D</color>
+    <color name="blue">#4C69FC</color>
+    <color name="skyblue">#FF880D</color>
+    <color name="dark_gray">#BEBEBE</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#80000000</color>
+    <!-- 半透明 -->
+    <color name="red">#FFFF0000</color>
+    <color name="order_item">#FFF0C0</color>
+    <color name="dark_bule">#196062</color>
+    <color name="dark_red">#FFFF0000</color>
+    <color name="orange">#FFAE00</color>
+    <color name="light_red">#F58181</color>
+    <color name="yellow">#FFDC59</color>
+    <color name="base">#363D4C</color>
+    <color name="white_gray">#F2F2F2</color>
+    <color name="bg_color">#faf5e9</color>
+    <color name="text_color">#333333</color>
+    <color name="stroke_color">#dddddd</color>
+    <color name="item_title_color">#eeeeee</color>
+    <color name="divde_line">#dddddd</color>
+    <color name="pos_radio">#f5f7fa</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="text_color_im1">#FF880D</color>
+
+</resources>

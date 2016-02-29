@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phone_recharge_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/public_top_btm"/>
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:src="@drawable/public_top_btm"/>
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="93dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logo"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/title_bar_tv"
+            android:text="终端激活"
+            android:textColor="@android:color/black"
+            android:textSize="35dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="280dp"
+            android:src="@drawable/game_phont_icon" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服电话：400-618-2627"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/layout_title_bar" >
+        
+        <RelativeLayout 
+            android:id="@+id/activate_success_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/activate_success_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="激活成功，欢迎使用智能终端系统"
+                android:drawablePadding="5dp"
+                android:textSize="30sp"
+                android:textColor="#9bc200"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/activate_error_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/activate_error_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="激活失败，请重新操作"
+                android:drawablePadding="5dp"
+                android:textSize="20sp"
+                android:textColor="#9bc200"/>
+             
+              <Button
+                android:id="@+id/again_btn"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_click_bg"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="重新激活"
+                android:textColor="#000"
+                android:textSize="25sp" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+        
+       
+    
+    <include layout="@layout/layout_progress_dialog" />
+
+</RelativeLayout>

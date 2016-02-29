@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app1="http://schemas.android.com/apk/res/com.pos.orderfood"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.pos.lizhimain" xmlns:app2="http://schemas.android.com/apk/res/com.pos.lizhiorder">
+ <RelativeLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+  
+        android:background="#E4543C" >
+ 
+
+        <TextView
+            android:id="@+id/tv_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="收银台"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="85dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp" >
+
+            <RadioGroup
+                android:id="@+id/rg_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/title_left_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_goods1"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="花式咖啡" />
+
+                <RadioButton
+                    android:id="@+id/rb_goods2"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:text="单品咖啡" />
+
+                <RadioButton
+                    android:id="@+id/rb_goods3"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:text="果汁" />
+ 
+            </RadioGroup>
+     
+
+            <ImageView
+                android:id="@+id/iv_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_attribute_edit" />
+        </RelativeLayout>
+
+        <com.lizhi.widget.UnderlinePageIndicator
+            android:id="@+id/indicator_goods"
+            android:layout_width="@dimen/four_radio_text_width"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/title_left_margin"
+           
+            app2:fades="false"
+            app2:selectedColor="@color/orange" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

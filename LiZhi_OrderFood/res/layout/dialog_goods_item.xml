@@ -1,0 +1,283 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1.0"
+                android:singleLine="true"
+                android:text="浓情咖啡摩卡"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="冷热饮"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/group1"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio11"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="冷饮"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio12"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:text="热饮"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="糖"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/group2"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio21"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="加"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio22"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:text="不加"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="牛奶"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/group3"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio31"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="加"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio32"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:text="不加"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="规格"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/group4"
+                android:layout_width="235dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio41"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="小"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio42"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:text="中"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio43"
+                    style="@style/radio_dialog_text"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:text="大"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:src="@drawable/dialog3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:id="@+id/iv_minus"
+                android:src="@drawable/icon_goods_minus" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:src="@drawable/icon_goods_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center"
+                android:text="添加已选"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

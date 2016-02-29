@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/home_tab_width" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_tab"
+        android:layout_width="@dimen/home_tab_width"
+        android:layout_height="match_parent"
+        android:background="#363D4C"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_main_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_home_no" />
+
+        <Button
+            android:id="@+id/btn_main_cashier"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_checkstand_no" />
+		<Button
+            android:id="@+id/btn_main_order"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_order_no" />
+        <Button
+            android:id="@+id/btn_main_goods"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/icon_manu_goods_no" />
+        <Button
+            android:id="@+id/btn_main_member"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_member_no" />
+        
+        <Button
+            android:id="@+id/btn_main_account"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_account_no" />
+
+        
+        
+        <Button
+            android:id="@+id/btn_main_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_inform_no" />
+<Button
+            android:id="@+id/btn_main_shop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/icon_manu_function_no" />
+        <Button
+            android:id="@+id/btn_main_pos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/ic_pos_no" />
+
+        
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress_dialog" />
+
+</RelativeLayout>

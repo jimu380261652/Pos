@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_account_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="支付方式" 
+        android:gravity="center"
+ 		android:background="@color/blue"
+        />
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/gray"
+	    />
+   <!-- <TextView 
+       android:id="@+id/bf_btn"
+       android:layout_width="match_parent"
+       android:layout_weight="1"
+       android:layout_height="0dp"
+       android:text="备付金支付"
+       android:background="@drawable/pay_selector"
+       android:gravity="center"
+       />
+   <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/gray"
+	    /> -->
+   <TextView 
+       android:id="@+id/sk_btn"
+       android:background="@drawable/pay_selector"
+       android:layout_width="match_parent"
+       android:layout_weight="1"
+       android:layout_height="0dp"
+       android:text="刷卡支付"
+       android:gravity="center"
+       />  
+</LinearLayout>

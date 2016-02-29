@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+ 	<Button 
+ 	    android:id="@+id/btn_ok"
+ 	    android:background="@drawable/btn_orange_selector"
+ 	    android:layout_width="500dp"
+ 	    android:layout_height="60dp"
+ 	    android:text="确定"
+ 	    android:textSize="20sp"
+ 	    android:textColor="@color/white"
+ 	    android:layout_alignParentBottom="true"
+ 	    android:layout_margin="15dp"
+ 	    />
+	<View 
+	    android:layout_above="@+id/btn_ok"
+	    android:id="@+id/line1"
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/gray"
+	    />
+	
+	<ListView 
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="20dp"
+	    android:layout_above="@+id/line1"
+	    android:id="@+id/lv_goods"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    android:divider="@color/gray"
+	    android:dividerHeight="1dp"
+	    /> 
+</RelativeLayout>

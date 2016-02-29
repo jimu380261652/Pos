@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.pos.lizhimain"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app1="http://schemas.android.com/apk/res/com.pos.lizhiorder">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_title_height"
+        android:background="@color/white_gray" >
+
+        <RadioGroup
+            android:id="@+id/rg_cashier"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/title_left_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_cashier1"
+                style="@style/radio_button_text"
+                android:layout_width="@dimen/radio_text_width"
+                android:layout_height="@dimen/radio_text_width"
+                android:button="@null"
+                android:checked="true"
+                android:text="收银" />
+			 
+            <RadioButton
+                android:id="@+id/rb_cashier4"
+                style="@style/radio_button_text"
+                android:layout_width="@dimen/radio_text_width"
+                android:layout_height="@dimen/radio_text_width"
+                android:button="@null"
+                android:text="商品管理" />
+			<RadioButton
+                android:id="@+id/rb_cashier6"
+                style="@style/radio_button_text"
+                android:layout_width="@dimen/radio_text_width"
+                android:layout_height="@dimen/radio_text_width"
+                android:button="@null"
+                android:text="商品入库" />
+            <RadioButton
+                android:id="@+id/rb_cashier5"
+                style="@style/radio_button_text"
+                android:layout_width="@dimen/radio_text_width"
+                android:layout_height="@dimen/radio_text_width"
+                android:button="@null"
+                android:text="数据同步" />
+        </RadioGroup>
+
+     
+
+         <com.lizhi.widget.UnderlinePageIndicator
+            android:id="@+id/indicator_cashier"
+            android:layout_width="@dimen/four_radio_text_width"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/title_left_margin"            
+            app1:fades="false"
+ 
+            app1:selectedColor="#FF880D" /> 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_cashier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

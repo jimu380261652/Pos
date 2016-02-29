@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="256dp"
+    android:layout_height="256dp"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+         >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:focusable="false"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/app_description" />
+
+        <ImageView
+            android:id="@+id/imageView_black"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_black"
+            android:contentDescription="@string/app_description"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/transparent"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="#FF0033"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="256dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

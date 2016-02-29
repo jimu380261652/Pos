@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/darkgray"
+    >
+    <LinearLayout
+        android:layout_width="@dimen/radio_text_width"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_order_normal"
+            style="@style/select_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+             android:text="线上订单" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_triangle" />
+    </LinearLayout>
+
+   <!--  <FrameLayout
+        android:id="@+id/tv_order_fram"
+        android:layout_width="@dimen/radio_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/title_left_margin"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/tv_order_add"
+            style="@style/select_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="增值订单" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/skyblue"
+            android:visibility="gone" />
+    </FrameLayout> -->
+
+    <LinearLayout
+        android:layout_width="@dimen/radio_text_width"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_order_status_choose"
+            style="@style/select_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:text="状态" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_triangle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/radio_text_width"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_order_time_choose"
+            style="@style/select_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:text="时间" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_triangle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/radio_text_width"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_order_condition_choose"
+            style="@style/select_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:text="筛选" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_triangle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_showall"
+        style="@style/select_item_text"
+        android:layout_width="@dimen/radio_text_width"
+        android:layout_height="match_parent"
+        android:text="显示全部"
+        android:textColor="@color/skyblue" />
+
+</LinearLayout>

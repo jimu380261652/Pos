@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="12dp" >
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="140dp"
+        android:layout_height="30.0dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7.5dip"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tv_mer1"
+            android:layout_width="0dp"
+            android:layout_height="30.0dp"
+            android:layout_weight="1.21"
+            android:background="@drawable/radio_topic_all_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="商品库"
+            android:textColor="@drawable/wp_text_selector"
+            android:textSize="15.0sp" />
+
+        <RadioButton
+            android:id="@+id/tv_mer2"
+            android:layout_width="0dp"
+            android:layout_height="30.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/radio_zone_hot_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="云商品库"
+            android:textColor="@drawable/wp_text_selector"
+            android:textSize="15.0sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+ 
+        android:background="@drawable/bg_edit"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@color/white_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                style="@style/business_item_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:text="条形码" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_pro_price"
+                style="@style/business_item_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                android:text="商品名称" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_pro_discount"
+                style="@style/business_item_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="单价（元）" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_pro_num"
+                style="@style/business_item_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:text="库存数量" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray" />
+
+            <TextView
+                style="@style/business_item_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:text="可否购买" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+        <com.markmao.pulltorefresh.widget.XListView
+            android:id="@+id/lv_retail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:scrollbars="none"
+            
+             />
+        <!--
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none"
+        -->
+    </LinearLayout>
+
+</LinearLayout>

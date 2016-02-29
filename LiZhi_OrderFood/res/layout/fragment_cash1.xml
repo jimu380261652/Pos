@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.pos.lizhimain"
+    xmlns:app1="http://schemas.android.com/apk/res/com.pos.lizhiorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray" >
+
+    <RelativeLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#E4543C" >
+
+        <TextView
+            android:id="@+id/tv_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="收银台"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/white_gray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_cashier"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/title_left_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_cash1"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="花式咖啡" />
+
+                <RadioButton
+                    android:id="@+id/rb_cash2"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:text="单品咖啡" />
+
+                <RadioButton
+                    android:id="@+id/rb_cash3"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:text="果汁" />
+
+                <RadioButton
+                    android:id="@+id/rb_cash4"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:text="健康奶饮"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/rb_cash5"
+                    style="@style/radio_button_text"
+                    android:layout_width="@dimen/radio_text_width"
+                    android:layout_height="@dimen/radio_text_width"
+                    android:button="@null"
+                    android:text="沁香茶类"
+                    android:visibility="invisible" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/iv_showall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:src="@drawable/ic_tab_down"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/waitorder"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="560dp"
+                android:gravity="center"
+                android:text="线上待接订单:1"
+                android:textColor="@color/orange"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.lizhi.widget.UnderlinePageIndicator
+            android:id="@+id/indicator_cashier"
+            android:layout_width="@dimen/six_radio_text_width"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/title_left_margin"
+            app1:fades="false"
+            app1:selectedColor="@color/orange" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_top"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/gv_home"
+            android:layout_width="550dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.5"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="可搭单"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="商品              支付数量        搭单"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="1.香草咖啡        0"
+                    android:textSize="24sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_goods2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="2.鲜榨西瓜汁    1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_goods_add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="已选餐品"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_food"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray" />
+
+            <ListView
+                android:id="@+id/lv_GetGoods"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_below="@+id/line1"
+                android:divider="@color/gray"
+                android:dividerHeight="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_money"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="账单金额"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_order"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="￥0"
+                android:textColor="@color/orange"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center"
+                android:text="下单"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

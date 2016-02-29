@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	    <LinearLayout
+	        android:layout_width="600dp"
+	        android:layout_height="@dimen/edittext_height"
+	        android:background="@drawable/login_edit"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="50dp"
+	        android:padding="10sp">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="手机号"
+	            android:textSize="@dimen/normal_text"
+	            android:textColor="@color/black"/>
+	        <EditText
+	            android:id="@+id/et_member_phone"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="60dp"
+	            android:layout_marginLeft="10dp"
+	            android:background="@null"
+	            android:inputType="number"
+	            android:hint="请输入手机号"
+	            android:textSize="@dimen/normal_text"/>
+	    </LinearLayout>
+	    <Button
+	        android:id="@+id/bt_member_send"
+	        android:layout_width="600dp"
+	        android:layout_height="@dimen/edittext_height"
+	        android:background="@drawable/btn_gray"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="50dp"
+	        android:gravity="center"
+	        android:text="发送验证信息"
+	        android:textSize="25sp"
+	        android:textColor="@color/white"/>
+	    <ImageView android:id="@+id/iv_code"
+	        android:layout_width="250dp"
+	        android:layout_height="250dp"
+	        android:background="@drawable/account_selector"
+	        android:layout_marginTop="50dp"
+ 
+	        android:layout_gravity="center_horizontal"/>
+	    <TextView 
+ 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/normal_text"
+	        android:textColor="@color/black"
+	        android:text="还不是会员？"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp"/>
+	    <TextView 
+ 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/normal_text"
+	        android:textColor="@color/black"
+	        android:text="扫描二维码，成为会员，享受积分和折扣优惠"
+			android:layout_gravity="center_horizontal"/>
+	</LinearLayout>
+
+</LinearLayout>

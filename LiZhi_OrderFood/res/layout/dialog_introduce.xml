@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_margin="15dp"
+    android:background="@color/gray"
+    >
+	  <TextView 
+	      android:text="备注"
+	     
+	      android:textSize="24sp"
+	      android:layout_width="match_parent"
+	      android:gravity="center"
+	      android:layout_height="46sp"
+	      
+	      />
+	  <EditText 
+	      android:id="@+id/et_introduce"
+	      android:layout_width="match_parent"
+	      android:layout_height="350dp"
+	      android:background="@drawable/cash_edit"
+	      />
+	  <Button 
+	      android:id="@+id/btn_ok"
+	      android:layout_width="match_parent"
+	      android:layout_height="60dp"
+	      android:background="@drawable/cash_edit"
+	      android:gravity="center"
+	      android:text="确定"
+	      
+	      />
+</LinearLayout>

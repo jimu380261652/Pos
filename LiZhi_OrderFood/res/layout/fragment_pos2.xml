@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="打印设置"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_edit"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="线上订单"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="自动打印小票："
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_open1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="开" />
+
+                <RadioButton
+                    android:id="@+id/rb_close1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="关" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="打印联数："
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_phone_1"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_phone_2"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/rb_phone_3"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/rb_phone_4"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/rb_phone_5"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="5" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edit"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="线下订单"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="自动打印小票："
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_open2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="开" />
+
+                <RadioButton
+                    android:id="@+id/rb_close2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="关" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="打印联数："
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_pos_1"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_pos_2"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/rb_pos_3"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/rb_pos_4"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/rb_pos_5"
+                    style="@style/radio_button_text2"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:button="@null"
+                    android:text="5" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_shape_red"
+        android:text="返回"
+        android:textColor="@color/white" />
+
+</LinearLayout>
